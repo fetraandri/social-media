@@ -1,3 +1,5 @@
+CREATE VIEW invitation_non_accepteid1 AS 
+
 SELECT first_name, last_name, nickname, is_accepted 
 from account 
 inner join send_invite on account.id_account = send_invite.id_account_receiver 
